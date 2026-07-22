@@ -4,10 +4,28 @@ using System.Text;
 
 namespace ENSE707_AppointmentBooking
 {
-    public class AppointmentRequest
+    //Before the improvement:
+
+    /*public class AppointmentRequest
     {
         public Patient Patient { get; set; }
         public Doctor Doctor { get; set; }
         public DateTime RequestedDate { get; set; }
+    }*/
+
+    //Step 13: With the improvement:
+    public class AppointmentRequest
+    {
+        public Patient Patient { get; }
+        public Doctor Doctor { get; }
+        public DateTime RequestedDate { get; }
+        public AppointmentRequest(Patient patient, Doctor doctor, DateTime requestedDate)
+        {
+            Patient = patient ?? throw new ArgumentNullException(nameof(patient));
+            Doctor = doctor ?? throw new ArgumentNullException(nameof(doctor));
+            if (requestedDate.Date < DateTime.Today)
+                throw new ArgumentException("Requested appointment date cannot be in the past.");
+                RequestedDate = requestedDate;
+        }
     }
 }

@@ -1,22 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MSTest" Version="4.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+		<PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AppointmentBooking\AppointmentBooking.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AppointmentBooking\AppointmentBooking.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
-  </ItemGroup>
+	<ItemGroup>
+		<Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+	</ItemGroup>
 
 </Project>
