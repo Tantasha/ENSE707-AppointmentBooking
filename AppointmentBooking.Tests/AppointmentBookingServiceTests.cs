@@ -1,4 +1,5 @@
 ﻿using ENSE707_AppointmentBooking;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ENSE707_AppointmentBooking.Tests
 {
@@ -208,6 +209,5 @@ namespace ENSE707_AppointmentBooking.Tests
             StringAssert.Contains(result.Message, "no available slots");
         }
     }
-
 }
 
