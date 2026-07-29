@@ -152,7 +152,6 @@ namespace ENSE707_AppointmentBooking.Tests
             Assert.AreEqual(0, doctor.AvailableSlots);
         }
 
-        
         [TestMethod]
         public void Doctor_WhenIdIsEmpty_ThrowsException()
         {
