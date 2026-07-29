@@ -14,6 +14,7 @@
 # Result Table
 | Test Area | Number of Tests | Passed | Failed | Notes |
 |:---:|:---:|:---:|:---:|:---:
-
+| Booking tests | 4 | 4 | 0 | Exisiting test passed |
+| Cancellation tests | 5 | 5 | 0 | New features passed |
 
 # Release Recommendation

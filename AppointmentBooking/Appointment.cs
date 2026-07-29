@@ -6,6 +6,7 @@ namespace ENSE707_AppointmentBooking
 {
     public class Appointment
     {
+        // Properties for appointment details:
         public string Id { get; }
         public Doctor Doctor { get; }
         public Patient Patient { get; }
